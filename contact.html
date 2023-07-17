@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>VERY PERI H&BS Home</title>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UI-Compatible" content="ie=edge"> 
+        <link href="style.css" rel="stylesheet" type="text/css">
+
+    </head>
+
+    <body>
+        <div class="container">
+            <nav class="navbar">
+                <!-- <div class="flipcard">
+                    <div class="flipinner"> -->
+                        <a href="index.html">
+                            <div class="logo">
+                        </div>
+                        </a>
+                         <!-- <div class="logoback">
+                        </div>        
+                    </div>
+                </div>  -->
+               
+             
+                
+                <div class="bg"></div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html"> 
+                        <div class="dropdown"> Services Offered
+                            <div class="dropdown-content">
+                                <a href="services.html#hair">Hair</a>
+                                <a href="services.html#nails">Nails</a>
+                                <a href="services.html#wellness">Wellness</a>
+                                <a href="services.html#beauty">Beauty</a>
+                            </div>
+                        </div>
+                   
+                    </a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+
+            <div class="contact">
+                
+                    <div class="formleft">
+                        <h2>Book a Service</h2>
+                        <form>
+                            <input type="text" id="FName" placeholder="First Name" required> 
+                            <input type="text" id="LName" placeholder="Last Name" required> 
+                            <input type="email" id="Email" placeholder="Email" required> 
+                            <input type="text" name="Subject" placeholder=" Subject" value="Subject: Book A New Service" readonly="readonly">
+                            Service: 
+                            <!-- <br><span class="choose">To choose a service, go to Services Offered Page and click the 'Book an Appointment' button</span>
+                            <textarea id="specificservice" rows="1" cols="3" readonly="readonly"> </textarea> -->
+                            <select id="dd" required>
+                                <option value="Select a Service">Select a Service...</option>
+                                <option value="Hair-Haircut">Hair - Haircut</option>
+                                <option value="Hair-HairBlower">Hair - Hair Blower</option>
+                                <option value="Hair-HairIron">Hair - Hair Iron</option>
+                                <option value="Hair-HairColor">Hair - Hair Color</option>
+                                <option value="Hair-Rebond">Hair - Rebond</option>
+                                <option value="Hair-Brazillian">Hair - Brazillian Blowout Treatment</option>
+                                <option value="Nails-Manicure">Nails - Manicure</option>
+                                <option value="Nails-Pedicure">Nails - Pedicure</option>
+                                <option value="Wellness-RegularMassage">Wellness - Regular Massage (1 hr)</option>
+                                <option value="Wellness-Footspa">Wellness - Footspa</option>
+                                <option value="Beauty-HandM">Beauty - Hair and Makeup</option>
+                                <option value="Beauty-EyebrowThread">Beauty - Eyebrow Thread</option>
+                                <option value="Beauty-EyelashExtension">Beauty - Eyelash Extension (natural)</option>
+                            </select>
+                            Date to Book: <input type="date"  id="Date" required> 
+                            Time: <input type="time" id="Time" onchange="validateTime(this.value)" required> 
+                            <textarea id="Message" rows="10" cols="21" placeholder="Additional Message" ></textarea>
+                            <button type="submit" id="sendbutton" onclick="sendMail()">Send</button>
+                        </form> 
+                    </div>
+                   
+                        <div class="formright">
+                            <h2>REACH US!</h2>
+                            <p>
+                                VISIT US AT! <br> <img src="images/iconshop.png" id="icon"> Complex, Salitran 1, Aguinaldo Highway Dasmarinas City, Cavite, 4114, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Philippines
+                            </p>
+                    </div>
+ 
+            </div>
+
+             <div class="contact2"></div>
+              
+     
+
+            <div class="footer">
+                <ul>
+                    <li><i>@2023</i></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    
+                </ul>              
+             </div>
+        </div>
+
+    </body>
+
+    <script src="contact.js"> </script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("f-_Jq9I9EnJGORUQQ");
+    })();
+    </script>
+    
+
+</html>
