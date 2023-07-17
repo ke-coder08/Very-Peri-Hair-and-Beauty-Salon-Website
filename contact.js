@@ -115,18 +115,6 @@ function checkSelection() {
   return true;
 }
 
-// EMAILJS.com
-function sendMail(){
-  var params = {
-    name : document.getElementById("Fname").value,
-    email : document.getElementById("Email").value,
-    service : document.getElementById("dd").value,
-    date : document.getElementById("Date").value,
-    time : document.getElementById("Time").value,
-    message : document.getElementById("Message").value,
-  } 
 
-email.js.send("service_x5oh6kn","template_f9ut58h",params).then(function (res){
-      alert("Sent Successfully!" + res.status);
-})
-}
+   
+
