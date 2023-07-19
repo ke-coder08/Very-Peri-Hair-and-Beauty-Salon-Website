@@ -112,19 +112,22 @@
                 
                 if ( document.getElementById('Name').value.length === 0 ||
                      document.getElementById('Email').value.length === 0 ||
-                     document.getElementById('Email').value !== /gmail/ ||
                      document.getElementById('dd').value === 'Select a Service' ||
                      document.getElementById('Date').value.length === 0 ||
                      document.getElementById('Time').value.length === 0) 
                 {
-                    alert('Some field/s are empty. Please double check your input/s.');
+                    alert('Some field/s are empty.');
 
+                }
+
+                if (document.getElementById('Email').value !== /gmail/){
+                    alert('Invalid Email');
                 }
 
                 else{
                     (function(){
-                emailjs.init("f-_Jq9I9EnJGORUQQ");
-                })();
+                    emailjs.init("f-_Jq9I9EnJGORUQQ");
+                    })();
                 
                 var params ={
                     name: document.getElementById("Name").value,
