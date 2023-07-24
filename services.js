@@ -29,6 +29,10 @@ function ToRedirect(){
   const btneyebrow = document.getElementById('btneyebrow');
   const btneyelash = document.getElementById('btneyelash');
 
+  const form6 = document.getElementById('form6');
+  const btngelmanicure = document.getElementById('btngelmanicure');
+  const btngelpedicure = document.getElementById('btngelpedicure');
+
 //******************************************************************** */
   if (btnID === 'btnhaircut'){
     form.addEventListener('submit', function(e){
@@ -202,6 +206,33 @@ else if (btnID === 'btneyelash'){
     e.preventDefault();
  
     const btnServiceValue = btneyelash.value;
+
+    window.localStorage.setItem('specificservice',btnServiceValue);
+
+    window.location.href= "contact.html";
+
+  })
+}
+
+/************************************************** */
+else if (btnID === 'btngelmanicure'){
+  form6.addEventListener('submit', function(e){
+    e.preventDefault();
+ 
+    const btnServiceValue = btngelmanicure.value;
+
+    window.localStorage.setItem('specificservice',btnServiceValue);
+
+    window.location.href= "contact.html";
+
+  })
+}
+
+else if (btnID === 'btngelpedicure'){
+  form6.addEventListener('submit', function(e){
+    e.preventDefault();
+ 
+    const btnServiceValue = btngelpedicure.value;
 
     window.localStorage.setItem('specificservice',btnServiceValue);
 
