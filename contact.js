@@ -76,6 +76,25 @@ else if(Service === 'Hair-Rebond'){
 else if(Service === 'Hair-Brazillian'){
   dropdownvalue.value='Hair-Brazillian';
 }
+else if(Service === 'Hair-Balayage'){
+  dropdownvalue.value='Hair-Balayage';
+}
+else if(Service === 'Hair-Highlights'){
+  dropdownvalue.value='Hair-Highlights';
+}
+else if(Service === 'Hair-Perm'){
+  dropdownvalue.value='Hair-Perm';
+}
+else if(Service === 'Hair-HotOil'){
+  dropdownvalue.value='Hair-HotOil';
+}
+else if(Service === 'Hair-HairBotox'){
+  dropdownvalue.value='Hair-HairBotox';
+}
+else if(Service === 'Hair-Cellophane'){
+  dropdownvalue.value='Hair-Cellophane';
+}
+
 else if(Service === 'Nails-Manicure'){ /**NAILS */
   dropdownvalue.value='Nails-Manicure';
 }
@@ -88,12 +107,14 @@ else if(Service === 'Nails-GelManicure'){
 else if(Service === 'Nails-GelPedicure'){
   dropdownvalue.value='Nails-GelPedicure';
 }
+
 else if(Service === 'Wellness-RegularMassage'){ /**WELLNESS */
   dropdownvalue.value='Wellness-RegularMassage';
 }
 else if(Service === 'Wellness-Footspa'){
   dropdownvalue.value='Wellness-Footspa';
 }
+
 else if(Service === 'Beauty-HandM'){ /**BEAUTY */
   dropdownvalue.value='Beauty-HandM';
 }
