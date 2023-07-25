@@ -25,7 +25,6 @@ function ToRedirect(){
 
   const form5 = document.getElementById('form5');
   const btnhandm = document.getElementById('btnhandm');
-  const btneyebrow = document.getElementById('btneyebrow');
   const btneyelash = document.getElementById('btneyelash');
 
   const form6 = document.getElementById('form6');
@@ -197,18 +196,6 @@ else if (btnID === 'btnhandm'){
   })
 }
 
-else if (btnID === 'btneyebrow'){
-  form5.addEventListener('submit', function(e){
-    e.preventDefault();
- 
-    const btnServiceValue = btneyebrow.value;
-
-    window.localStorage.setItem('specificservice',btnServiceValue);
-
-    window.location.href= "contact.html";
-
-  })
-}
 
 else if (btnID === 'btneyelash'){
   form5.addEventListener('submit', function(e){

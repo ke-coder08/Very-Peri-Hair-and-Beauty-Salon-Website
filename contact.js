@@ -118,9 +118,6 @@ else if(Service === 'Wellness-Footspa'){
 else if(Service === 'Beauty-HandM'){ /**BEAUTY */
   dropdownvalue.value='Beauty-HandM';
 }
-else if(Service === 'Beauty-EyebrowThread'){
-  dropdownvalue.value='Beauty-EyebrowThread';
-}
 else if(Service === 'Beauty-EyelashExtension'){
   dropdownvalue.value='Beauty-EyelashExtension';
 }
