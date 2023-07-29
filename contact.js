@@ -127,17 +127,17 @@ else{
 
 
 // Send Button
-function checkSelection() {
-  var selectElement = document.getElementById("dd");
-  var selectedOption = selectElement.options[selectElement.selectedIndex].value;
+// function checkSelection() {
+//   var selectElement = document.getElementById("dd");
+//   var selectedOption = selectElement.options[selectElement.selectedIndex].value;
 
-  if (selectedOption === "Select a Service") {
-      alert("Please select a Service before submitting.");
-      return false;
-  }
+//   if (selectedOption === "Select a Service") {
+//       alert("Please select a Service before submitting.");
+//       return false;
+//   }
 
-  return true;
-}
+//   return true;
+// }
 
 
    
